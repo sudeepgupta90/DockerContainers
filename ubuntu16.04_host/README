@@ -1,4 +1,7 @@
 - ubuntu 16.04 host machine setup for configuration with ansible
 - passwordless login with ssh-key
-
+ 
+ 
+ - start the container with the below command to have ssh start-up
+docker run -it  ubuntuhost /bin/bash -c '/etc/init.d/ssh start && /bin/bash'
 
