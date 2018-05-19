@@ -1,0 +1,4 @@
+- ubuntu 16.04 host machine setup for configuration with ansible
+- passwordless login with ssh-key
+
+

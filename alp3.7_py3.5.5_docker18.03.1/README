@@ -1,0 +1,4 @@
+- Docker container for running Docker 18.03.1-ce
+- python 3.5.5
+- openssh
+- ansible
