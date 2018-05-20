@@ -1,0 +1,4 @@
+- ubuntu 16.04 phusion host machine setup for configuration with ansible
+- passwordless login with provided ssh-key
+- phusion hosts fixes the issues with base ubuntu images
+
