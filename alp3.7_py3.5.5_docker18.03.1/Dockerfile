@@ -127,8 +127,8 @@ RUN set -ex; \
 
 #####install ansible
 
-RUN apk add --no-cache build-base libffi-dev openssl-dev openssh fping curl openrc
-RUN pip3 install --no-cache-dir ansible
+RUN apk add --no-cache build-base libffi-dev openssl-dev openssh fping curl openrc util-linux
+RUN pip3 install --no-cache-dir ansible docker
 
 #####copy configs
 
@@ -141,5 +141,5 @@ COPY configs/start.sh /root/start.sh
 
 EXPOSE 22 
 ##### start ssh services 
-CMD  sh /root/start.sh
+#ENTRYPOINT  sh /root/start.sh
 
