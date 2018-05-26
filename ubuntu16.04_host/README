@@ -2,6 +2,6 @@
 - passwordless login with ssh-key
  
  
- - start the container with the below command to have ssh start-up
-docker run -it  ubuntuhost /bin/bash -c '/etc/init.d/ssh start && /bin/bash'
+- the container starts with sshd running in the background. Start detached.
+
 

@@ -4,9 +4,9 @@
 - ansible
 
 - Using the container
-No ENTRYPOINT or CMD have been defined for the container. This container should be used to bind mount to another direcctory on the Docker host where you have ansible playbooks and launch scripts for other container hosts. 
+No ENTRYPOINT or CMD have been defined for the container. This container should be used to bind mount to another directory on the Docker host where you have ansible playbooks and launch scripts for other container hosts. 
 
-The ssh service daemon does not bot automatically with the container, it has to be started in case it is required. To start the container with sshd running, use the following command :
-	docker run -it dockeransible sh /root/start.sh && /bin/sh
+The ssh service daemon does not boot(read start) automatically with the container, it has to be started in case it is required. To start the container with sshd running, use the following command :
+	docker run -it dockeransible /bin/sh -c "/root/start.sh && /bin/sh"
 
 
