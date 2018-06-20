@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends rsyslog iputils
 #RUN mkdir ~/.ssh && ssh-keygen -N "" -t rsa -f ~/.ssh/id_rsa
 RUN mkdir /var/run/sshd
 
-RUN cd /usr/local/bin \
+RUN cd /usr/bin \
 	&& ln -s idle3 idle \
 	&& ln -s pydoc3 pydoc \
 	&& ln -s python3 python \
