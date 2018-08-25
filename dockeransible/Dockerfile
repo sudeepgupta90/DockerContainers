@@ -1,4 +1,4 @@
-FROM docker:18.06.0-ce
+FROM docker:18.06.1-ce
 
 ######### adding python##########
 ENV PATH /usr/local/bin:$PATH
